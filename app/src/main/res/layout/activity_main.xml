@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.QQActivity">
+
+    <TextView
+        android:id="@+id/ev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+     <com.cd.ruileda.cc.day01.widget.TextViewModel
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         app:text="TextViewModel3333"
+         app:textColor="@color/black"
+         app:textSize="20sp"
+         android:padding="10dp"
+         android:background="#00ff00"
+
+         android:layout_marginBottom="30dp"
+
+       />
+    <Button
+        android:id="@+id/buttomtm"
+        android:text="开始"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.cd.ruileda.cc.day01.widget.QQstepView
+        android:id="@+id/mmQQstepView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+       app:outcolor="@color/teal_700"
+        app:incolor="@color/purple_701"
+        app:stepTextcolor="@color/purple_702"
+        app:borderWidth="15dp"
+        app:stepTextSize="30dp"
+
+
+        />
+
+
+</LinearLayout>

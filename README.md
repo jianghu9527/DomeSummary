@@ -1,5 +1,4 @@
-# DomeSummary
-Dome  汇总
+# DomeSummary 
 Dome  汇总
 高级Android面试汇总
 版本持续跟新中。。。。。	

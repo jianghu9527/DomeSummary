@@ -17,4 +17,14 @@
         <attr name="stepTextcolor" format="color"/>
 
     </declare-styleable>
+
+    <declare-styleable name="ColorTrackTextView">
+
+        <attr name="originColor" format="string"/>
+        <attr name="changeColor" format="color"/>
+
+    </declare-styleable>
+
+
+
 </resources>

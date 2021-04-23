@@ -1,18 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_height="match_parent">
 
 
 
 <com.cd.ruileda.cc.day01.widget.ColorTrackTextView
+    android:id="@+id/colortracktextview"
     android:textColor="@color/design_default_color_secondary"
     android:textSize="20sp"
     android:text="hello world"
+    android:layout_margin="50dp"
+    android:layout_gravity="center"
     android:layout_width="wrap_content"
+    app:originColor="@color/purple_704"
+    app:changeColor="@color/purple_500"
     android:layout_height="wrap_content"/>
 
 
-
+    <Button
+        android:id="@+id/startbuts_left"
+        android:layout_width="wrap_content"
+        android:text="开始left"
+       android:layout_margin="50dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/startbuts_right"
+        android:layout_width="wrap_content"
+        android:layout_margin="50dp"
+        android:text="开始right"
+        android:layout_height="wrap_content"/>
 </LinearLayout>

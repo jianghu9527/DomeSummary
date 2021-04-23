@@ -20,7 +20,7 @@
 
         <activity android:name=".ui.QQActivity" />
         <activity android:name=".ui.UtilsViewPageActivity" />
-
+        <activity android:name=".ui.ProgressActivity" />
 
     </application>
 

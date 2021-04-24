@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:layout_height="match_parent">
+
+
+
+<com.cd.ruileda.cc.view.widget.ProgressBarView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:outBackground="@color/home_but_bg"
+    app:progressTextColor="@color/teal_700"
+    app:innerBackground="@color/main_color"
+    app:roundWidth="20dp"
+    app:progressTextSize="1000sp"
+    />
+
+
 
 </LinearLayout>

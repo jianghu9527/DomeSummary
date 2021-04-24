@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     public  List<String>  getData (){
         mdata.add("QQ计步器");
         mdata.add("字体变色效果分析");
-        mdata.add("进度条");
+        mdata.add("ProgreeBar进度条");
         mdata.add("Tinker");
         mdata.add("room");
         return mdata;
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             case "字体变色效果分析":
                 getonitem(UtilsViewPageActivity.class);
                 break;
-            case "进度条":
+            case "ProgreeBar进度条":
                 getonitem(ProgressActivity.class);
                 break;
             case "Tinker":

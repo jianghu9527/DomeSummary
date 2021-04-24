@@ -13,5 +13,28 @@
     <color name="purple_703">#FF3700</color>
     <color name="purple_704">#443700</color>
     <color name="purple_705">#113700</color>
+    <color name="main_color">#ffda44</color>
+    <color name="home_theme">#232A43</color>
+    <color name="home_but_bg">#6272AD</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="home_bottom">#9B9B9B</color>
+    <color name="gray_4f">#fff4f4f4</color>
+    <color name="quotes_tv_bg">#55A306</color>
+    <color name="switch_ios_track_bg">#4EDA62</color>
+
+
+    <color name="textviewmaincolor">#1A1A1A</color>
+
+    <color name="red">#FF4081</color>
+    <color name="bottom_upload">#11f47500</color>
+    <color name="main_bg_line">#aeaadc</color>
+
+    <color name="colorDivision">#33aaaaaa</color>
+
+    <color name="face_main_bg">#475586</color>
+    <color name="face_middlers_bg">#5B6893</color>
+    <color name="button_bg">#819E82</color>
+    <color name="crimson">#DC143C</color>
 
 </resources>

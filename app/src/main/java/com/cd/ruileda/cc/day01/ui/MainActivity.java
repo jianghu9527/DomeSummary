@@ -43,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
         mdata.add("QQ计步器");
         mdata.add("字体变色效果分析");
         mdata.add("进度条");
+        mdata.add("Tinker");
+        mdata.add("room");
         return mdata;
     }
 
@@ -58,6 +60,12 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case "进度条":
                 getonitem(ProgressActivity.class);
+                break;
+            case "Tinker":
+                getonitem(TinkerActivity.class);
+                break;
+            case "room":
+                getonitem(RoomActivity.class);
                 break;
         }
 

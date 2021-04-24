@@ -6,16 +6,13 @@ android {
     compileSdkVersion 30
 
     defaultConfig {
-        applicationId "com.cd.ruileda.cc.day01"
+        applicationId "com.cd.ruileda.cc.view"
         minSdkVersion 19
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
-
-
 //        buildConfigField "String", "MESSAGE", "\"I am the base apk\""
 //        buildConfigField "String", "TINKER_ID", "\"${TINKER_ID}\""
 //        buildConfigField "String", "PLATFORM", "\"all\""
@@ -34,7 +31,48 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    buildTypes {
+        release {
+            buildConfigField("Boolean", "isdebug", "false")
+            defaultPublishConfig "release_luxihepan"
+//            applicationIdSuffix "1.4.2"
+            versionNameSuffix "release_${getTime()}"
+            debuggable true
+            multiDexEnabled true
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+
+        debug{
+            buildConfigField("String", "releaseTime", "\""+new Date().format("yyyy/MM/dd HH:mm:ss")+"\"")
+            buildConfigField("Boolean", "isdebug", "true")
+            defaultPublishConfig "debug_luxihepan"
+            versionNameSuffix "debug_base_${getTime()}"
+            debuggable true
+            multiDexEnabled true
+//            signingConfig signingConfigs.signConfig
+//            shrinkResources true
+//            minifyEnabled true
+//            zipAlignEnabled true
+//            versionNameSuffix ".debug"
+//            multiDexEnabled true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro' , '../cretinautoupdatelibrary/proguard-rules.pro',
+//                    '../library/proguard-rules.pro'
+//            signingConfig signingConfigs.debug
+        }
+
+    }
+
+
 }
+
+
+def getTime(){
+    return new Date().format("yyyyMMdd HHmm",TimeZone.getDefault());
+}
+
 
 dependencies {
 
@@ -45,7 +83,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
-    implementation('com.tencent.tinker:tinker-android-lib:1.9.14.5')
+    implementation 'com.tencent.tinker:tinker-android-lib:1.9.14.5'
     //dex分包
     implementation "androidx.multidex:multidex:2.0.1"
 

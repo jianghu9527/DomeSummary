@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-     <com.cd.ruileda.cc.day01.widget.TextViewModel
+     <com.cd.ruileda.cc.view.widget.TextViewModel
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          app:text="TextViewModel3333"
@@ -37,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
-    <com.cd.ruileda.cc.day01.widget.QQstepView
+    <com.cd.ruileda.cc.view.widget.QQstepView
         android:id="@+id/mmQQstepView"
         android:layout_width="200dp"
         android:layout_height="200dp"

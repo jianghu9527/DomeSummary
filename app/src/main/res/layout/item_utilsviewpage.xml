@@ -7,7 +7,7 @@
 
 
 
-<com.cd.ruileda.cc.day01.widget.ColorTrackTextView
+<com.cd.ruileda.cc.view.widget.ColorTrackTextView
     android:id="@+id/colortracktextview"
     android:textColor="@color/design_default_color_secondary"
     android:textSize="20sp"

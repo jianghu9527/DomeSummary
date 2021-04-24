@@ -2,17 +2,27 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:background="@color/teal_200"
+    android:gravity="center"
     android:layout_height="match_parent">
 
 
 
 <TextView
     android:layout_width="wrap_content"
-    android:textColor="@color/teal_200"
+    android:textColor="@color/black"
     android:textSize="20sp"
     android:text="第一版本"
+    android:layout_margin="20dp"
     android:layout_height="wrap_content"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:background="@color/quotes_tv_bg"
+        android:textSize="20sp"
+        android:text="第一版本"
+        android:layout_height="wrap_content"/>
 
 
 </LinearLayout>

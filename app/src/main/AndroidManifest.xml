@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.cd.ruileda.cc.day01">
-
+    package="com.cd.ruileda.cc.view">
 
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
@@ -18,10 +17,10 @@
         android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true"
 
-        android:name=".base.BaseApplication"
+        android:name="com.cd.ruileda.cc.view.base.BaseApplication"
         android:theme="@style/Theme.Day01">
 
-        <activity android:name=".ui.MainActivity">
+        <activity android:name="com.cd.ruileda.cc.view.ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,11 +28,11 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.QQActivity" />
-        <activity android:name=".ui.UtilsViewPageActivity" />
-        <activity android:name=".ui.ProgressActivity" />
-        <activity android:name=".ui.TinkerActivity"/>
-        <activity android:name=".ui.RoomActivity"/>
+        <activity android:name="com.cd.ruileda.cc.view.ui.QQActivity" />
+        <activity android:name="com.cd.ruileda.cc.view.ui.UtilsViewPageActivity" />
+        <activity android:name="com.cd.ruileda.cc.view.ui.ProgressActivity" />
+        <activity android:name="com.cd.ruileda.cc.view.ui.TinkerActivity"/>
+        <activity android:name="com.cd.ruileda.cc.view.ui.RoomActivity"/>
 
     </application>
 

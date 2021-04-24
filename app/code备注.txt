@@ -1,0 +1,14 @@
+
+
+apk
+保存路径
+E:\ck_code\apk\tinker\debug\app-debug06.apk
+adb push   E:\ck_code\apk\tinker\debug\app-debug06.apk  /storage/emulated/0/1_luxihe_robot/developer_backup
+adb pull   /storage/emulated/0/screenshot  E:\ck_code\des_play\Screenshots
+
+
+
+
+
+
+

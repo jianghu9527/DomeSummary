@@ -2,10 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.cd.ruileda.cc.view">
 
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
 
 
     <application
@@ -17,10 +23,10 @@
         android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true"
 
-        android:name="com.cd.ruileda.cc.view.base.BaseApplication"
+        android:name=".base.BaseApplication"
         android:theme="@style/Theme.Day01">
 
-        <activity android:name="com.cd.ruileda.cc.view.ui.MainActivity">
+        <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,11 +34,25 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.cd.ruileda.cc.view.ui.QQActivity" />
-        <activity android:name="com.cd.ruileda.cc.view.ui.UtilsViewPageActivity" />
-        <activity android:name="com.cd.ruileda.cc.view.ui.ProgressActivity" />
-        <activity android:name="com.cd.ruileda.cc.view.ui.TinkerActivity"/>
-        <activity android:name="com.cd.ruileda.cc.view.ui.RoomActivity"/>
+        <activity android:name=".ui.QQActivity" />
+        <activity android:name=".ui.UtilsViewPageActivity" />
+        <activity android:name=".ui.ProgressActivity" />
+        <activity android:name=".ui.TinkerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:theme="@android:style/Theme.Translucent"  />
+        <activity android:name=".ui.RoomActivity"/>
+        <activity android:name=".ui.DebugActivity"/>
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
 
     </application>
 

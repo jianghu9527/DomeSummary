@@ -12,7 +12,7 @@
     android:layout_width="wrap_content"
     android:textColor="@color/black"
     android:textSize="20sp"
-    android:text="第一版本"
+    android:text="第二版本"
     android:layout_margin="20dp"
     android:layout_height="wrap_content"/>
 
@@ -21,7 +21,7 @@
         android:textColor="@color/black"
         android:background="@color/quotes_tv_bg"
         android:textSize="20sp"
-        android:text="第一版本"
+        android:text="第二版本"
         android:layout_height="wrap_content"/>
 
 

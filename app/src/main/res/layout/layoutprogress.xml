@@ -8,15 +8,44 @@
 
 
 <com.cd.ruileda.cc.view.widget.ProgressBarView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:id="@+id/viewprogress"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
     app:outBackground="@color/home_but_bg"
     app:progressTextColor="@color/teal_700"
     app:innerBackground="@color/main_color"
     app:roundWidth="20dp"
-    app:progressTextSize="1000sp"
+    android:layout_gravity="center"
+    app:progressTextSize="50sp"
+    android:layout_margin="10dp"
     />
 
+    <Button
+        android:id="@+id/buttonstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="开始" />
+
+    <com.cd.ruileda.cc.view.widget.ShapeView
+        android:id="@+id/shape_view"
+        android:layout_centerInParent="true"
+        android:layout_width="60dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:layout_height="60dp" />
+
+
+
+    <Button
+        android:id="@+id/button2ShapeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:onClick="exchange"
+        android:text="切换" />
 
 
 </LinearLayout>

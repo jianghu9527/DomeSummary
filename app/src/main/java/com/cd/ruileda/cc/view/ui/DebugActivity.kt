@@ -2,6 +2,8 @@ package com.cd.ruileda.cc.view.ui
 
 import android.os.Bundle
 import android.text.TextUtils
+import android.view.Window
+import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import com.cd.ruileda.cc.view.BuildConfig
 import com.cd.ruileda.cc.view.R
@@ -9,10 +11,11 @@ import com.cd.ruileda.cc.view.util.LogUtil
 import com.cd.ruileda.cc.view.util.SpUtil
 import kotlinx.android.synthetic.main.layoutdebug.*
 
-public class DebugActivity :AppCompatActivity(){
+  class DebugActivity :AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        getSupportActionBar()!!.hide();
         setContentView(R.layout.layoutdebug)
 
         var  str=StringBuffer();

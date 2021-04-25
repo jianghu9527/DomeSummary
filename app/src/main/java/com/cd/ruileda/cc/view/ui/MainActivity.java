@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         mdata.add("ProgreeBar进度条");
         mdata.add("Tinker");
         mdata.add("room");
+        mdata.add("debug");
         return mdata;
     }
 
@@ -67,6 +68,10 @@ public class MainActivity extends AppCompatActivity {
             case "room":
                 getonitem(RoomActivity.class);
                 break;
+            case "debug":
+                getonitem(DebugActivity.class);
+                break;
+
         }
 
     }

@@ -1,7 +1,9 @@
-plugins {
-    id 'com.android.application'
-}
+apply plugin: 'com.android.application'
 apply from: 'tinker-support.gradle'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
 
 android {
     compileSdkVersion 30
@@ -35,6 +37,23 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    signingConfigs{
+        release {
+            storeFile file("./keystore/ruileda.jks")
+            storePassword '123456' //密码
+            keyAlias 'key0'
+            keyPassword '123456'  //密码
+        }
+//        debug {
+//            storeFile file('keystores/debug.keystore')
+//        }
+    }
+
 
     buildTypes {
         release {
@@ -42,11 +61,13 @@ android {
             defaultPublishConfig "release_luxihepan"
 //            applicationIdSuffix "1.4.2"
             versionNameSuffix "release_${getTime()}"
-            debuggable true
+            debuggable false
             multiDexEnabled true
-            shrinkResources true
+            shrinkResources false
             minifyEnabled true
-            zipAlignEnabled true
+            zipAlignEnabled false
+
+            signingConfig signingConfigs.release
 //            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
 
@@ -68,7 +89,6 @@ android {
 //                    '../library/proguard-rules.pro'
 //            signingConfig signingConfigs.debug
         }
-
     }
 
 
@@ -106,6 +126,13 @@ dependencies {
     implementation 'com.tencent.bugly:nativecrashreport:latest.release' //其中latest.release指代最新版本号，也可以指定明确的版本号，例如2.2.0
 
     implementation 'com.tencent.tinker:tinker-android-lib:1.9.9'
+    implementation "androidx.core:core-ktx:+"
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.20"
+    implementation 'com.tencent:mmkv:1.0.23'
 
 
+}
+repositories {
+    mavenCentral()
 }

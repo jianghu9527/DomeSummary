@@ -1,6 +1,7 @@
 package com.cd.ruileda.cc.view.ui;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,8 +26,15 @@ public class TinkerActivity  extends AppCompatActivity {
         super.onCreate(savedInstanceState);
             setContentView(R.layout.layouttinker);
 
+            findViewById(R.id.buttinlkerrebug).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startTinker();
+                }
+            });
+    }
 
-
+    public  void startTinker(){
 
 
 

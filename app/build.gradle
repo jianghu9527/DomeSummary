@@ -41,7 +41,11 @@ android {
         checkReleaseBuilds false
         abortOnError false
     }
-
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+//        exclude 'META-INF/MANIFEST.MF'
+        exclude 'META-INF/MANIFEST.MF'
+    }
     signingConfigs{
         release {
             storeFile file("./keystore/ruileda.jks")
@@ -64,7 +68,7 @@ android {
             debuggable false
             multiDexEnabled true
             shrinkResources false
-            minifyEnabled true
+            minifyEnabled false
             zipAlignEnabled false
 
             signingConfig signingConfigs.release
@@ -79,6 +83,7 @@ android {
             versionNameSuffix "debug_base_${getTime()}"
             debuggable true
             multiDexEnabled true
+            minifyEnabled false
 //            signingConfig signingConfigs.signConfig
 //            shrinkResources true
 //            minifyEnabled true

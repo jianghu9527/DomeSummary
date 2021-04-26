@@ -2,14 +2,13 @@
 发布时间:2021年4月25日09点32分
 tinkerId=base-1.0.1
 
-
+assembleRelease
 
 apk
 保存路径
 E:\ck_code\apk\tinker\debug\app-debug06.apk
-adb push  E:\ck_code\apk\tinker\release\app-release02.apk  /storage/emulated/0/1_luxihe_robot/developer_backup
+adb push  E:\ck_code\apk\tinker\assembleRelease\app-release03.apk  /storage/emulated/0/1_luxihe_robot/developer_backup
 adb pull   /storage/emulated/0/screenshot  E:\ck_code\des_play\Screenshots
-
 
 E:\ck_code\apk\tinker\release\app-release02.apk
 

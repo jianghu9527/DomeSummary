@@ -82,7 +82,7 @@ public class FileSizeUtil {
      * 创建一个路径
      * @param path
      */
-    public void  FileCreatePath(String path){
+    public static void  FileCreatePath(String path){
         File dir=new File(path);
         if (!dir.exists()){
             dir.mkdirs();

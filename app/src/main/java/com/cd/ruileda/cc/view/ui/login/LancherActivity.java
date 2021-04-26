@@ -8,7 +8,9 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.cd.ruileda.cc.view.R;
+import com.cd.ruileda.cc.view.common.CommonPath;
 import com.cd.ruileda.cc.view.ui.MainActivity;
+import com.cd.ruileda.cc.view.util.FileSizeUtil;
 
 public class LancherActivity extends AppCompatActivity {
 
@@ -17,6 +19,7 @@ public class LancherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.layoutlancher);
+          FileSizeUtil.FileCreatePath(CommonPath.TABLE_DIR);
 
         new Handler().postDelayed(new Runnable() {
             @Override

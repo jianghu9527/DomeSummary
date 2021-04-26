@@ -7,7 +7,6 @@
     android:layout_height="match_parent">
 
 
-
 <TextView
     android:layout_width="wrap_content"
     android:textColor="@color/white"
@@ -21,7 +20,7 @@
         android:textColor="@color/white"
         android:background="@color/quotes_tv_bg"
         android:textSize="20sp"
-        android:text="第tinker版本"
+        android:text="第tinker_relase版本"
         android:layout_height="wrap_content"/>
 
     <Button
@@ -30,7 +29,7 @@
         android:textColor="@color/white"
         android:background="@color/quotes_tv_bg"
         android:textSize="20sp"
-        android:text="第tinker版本"
+        android:text="第tinker_relase版本"
         android:layout_height="wrap_content"/>
 
 </LinearLayout>

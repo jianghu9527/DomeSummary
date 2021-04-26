@@ -22,17 +22,15 @@
 
 -ignorewarnings #
 
+
 -dontwarn com.tencent.bugly.**
 -keep public class com.tencent.bugly.**{*;}
--keep class android.support.**{*;}
-
-
-
 # tinker混淆规则
 -dontwarn com.tencent.tinker.**
 -keep class com.tencent.tinker.** { *; }
 
-
+//如果你使用了support-v4包，你还需要配置以下混淆规则：
+#-keep class android.support.**{*;}
 
 
 

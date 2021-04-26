@@ -26,14 +26,14 @@ public interface StudentDao {
     @Query("SELECT * FROM "+TStudent.TABLE_NAME+" WHERE Class=:class_ AND Grade=:grade_")
     Single<List<TStudent>> getStudent(int class_, int grade_);
     // 清空某一班级的学生记录
-    @Delete(entity = TStudent.class)
-    void deleteStudents(TStudent.DeleteByClassGrade data);
+//    @Delete(entity = TStudent.class)
+//    void deleteStudents(TStudent.DeleteByClassGrade data);
     // 新增学生记录
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insertStudents(List<TStudent>  students);
     // 更新学号
-    @Update(entity = TStudent.class)
-    void updateCode(TStudent.UpdateCode data);
+//    @Update(entity = TStudent.class)
+//    void updateCode(TStudent.UpdateCode data);
     // 查询
     @Query("SELECT * FROM "+TStudent.TABLE_NAME+" WHERE id IN(:ids)")
     Single<List<TStudent>> findByIds(int []ids);

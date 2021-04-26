@@ -40,7 +40,7 @@ public class RoomActivity extends AppCompatActivity implements View.OnClickListe
         updata=  findViewById(R.id.buttonupdata);    updata.setOnClickListener(this);
         check=  findViewById(R.id.buttoncheck);    check.setOnClickListener(this);
 
-       new FileSizeUtil().FileCreatePath(CommonPath.TABLE_DIR);
+          FileSizeUtil .FileCreatePath(CommonPath.TABLE_DIR);
 
         verifyStoragePermissions(this);
     }
@@ -87,7 +87,7 @@ public class RoomActivity extends AppCompatActivity implements View.OnClickListe
         new Thread(new Runnable() {
             @Override
             public void run() {
-                TestDatabase.getInstance(RoomActivity.this).getStudentDao().updateCode(uploadCode);
+//                TestDatabase.getInstance(RoomActivity.this).getStudentDao().updateCode(uploadCode);
             }
         }).start();
 
@@ -98,7 +98,7 @@ public class RoomActivity extends AppCompatActivity implements View.OnClickListe
         new Thread(new Runnable() {
             @Override
             public void run() {
-                TestDatabase.getInstance(RoomActivity.this).getStudentDao().deleteStudents(delete);
+//                TestDatabase.getInstance(RoomActivity.this).getStudentDao().deleteStudents(delete);
             }
         }).start();
 

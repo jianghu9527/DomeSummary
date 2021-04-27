@@ -47,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
         mdata.add("Tinker");
         mdata.add("room");
         mdata.add("debug");
+        mdata.add("状态栏颜色");
+
         return mdata;
     }
 
@@ -72,7 +74,9 @@ public class MainActivity extends AppCompatActivity {
             case "debug":
                 getonitem(DebugActivity.class);
                 break;
-
+            case "状态栏颜色":
+                getonitem(StatusColorActivity.class);
+                break;
         }
 
     }

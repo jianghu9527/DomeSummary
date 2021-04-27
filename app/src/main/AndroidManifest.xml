@@ -38,8 +38,8 @@
         <activity android:name=".ui.MainActivity" />
         <activity android:name=".ui.UtilsViewPageActivity" />
         <activity android:name=".ui.ProgressActivity" />
-        <activity android:name=".ui.TinkerActivity"
-           />
+        <activity android:name=".ui.TinkerActivity" />
+        <activity android:name=".ui.StatusColorActivity"/>
 
 <!--        android:configChanges="keyboardHidden|orientation|screenSize|locale"-->
 <!--        android:theme="@android:style/Theme.Translucent"-->

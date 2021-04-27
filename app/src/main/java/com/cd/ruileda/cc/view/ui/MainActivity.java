@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         mdata.add("room");
         mdata.add("debug");
         mdata.add("状态栏颜色");
-
+        mdata.add("评分控件RatingBar");
         return mdata;
     }
 
@@ -76,6 +76,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case "状态栏颜色":
                 getonitem(StatusColorActivity.class);
+                break;
+            case "评分控件RatingBar":
+                getonitem(RatingBarActivity.class);
                 break;
         }
 

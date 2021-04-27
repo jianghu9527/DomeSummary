@@ -35,4 +35,12 @@
 
     </declare-styleable>
 
+
+    <declare-styleable name="RatingBar">
+        <attr name="starNormal" format="reference"/>
+        <attr name="starFocus" format="reference"/>
+        <attr name="gradeNumber" format="integer"/>
+    </declare-styleable>
+
+
 </resources>

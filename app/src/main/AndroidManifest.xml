@@ -40,6 +40,7 @@
         <activity android:name=".ui.ProgressActivity" />
         <activity android:name=".ui.TinkerActivity" />
         <activity android:name=".ui.StatusColorActivity"/>
+        <activity android:name=".ui.RatingBarActivity"/>
 
 <!--        android:configChanges="keyboardHidden|orientation|screenSize|locale"-->
 <!--        android:theme="@android:style/Theme.Translucent"-->

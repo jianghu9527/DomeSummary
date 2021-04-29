@@ -93,4 +93,8 @@ public class ShapeView extends View {
     public enum Shape {
         Circle, Square, Triangle
     }
+
+    public Shape getCurrentShape() {
+        return mCurrentShape;
+    }
 }

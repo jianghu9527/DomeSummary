@@ -49,6 +49,9 @@ public class MainActivity extends AppCompatActivity {
         mdata.add("debug");
         mdata.add("状态栏颜色");
         mdata.add("评分控件RatingBar");
+        mdata.add("常见多条目菜单筛选");
+
+
         return mdata;
     }
 
@@ -79,6 +82,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case "评分控件RatingBar":
                 getonitem(RatingBarActivity.class);
+                break;
+            case "常见多条目菜单筛选":
+                getonitem(ListDataActivity.class);
                 break;
         }
 

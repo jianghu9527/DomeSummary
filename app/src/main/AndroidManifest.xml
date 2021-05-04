@@ -47,6 +47,7 @@
 
         <activity android:name=".ui.RoomActivity"/>
         <activity android:name=".ui.DebugActivity"/>
+        <activity android:name=".ui.ListDataActivity"/>
 
 
         <provider

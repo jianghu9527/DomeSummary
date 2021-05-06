@@ -41,6 +41,7 @@
         <activity android:name=".ui.TinkerActivity" />
         <activity android:name=".ui.StatusColorActivity"/>
         <activity android:name=".ui.RatingBarActivity"/>
+        <activity android:name=".ui.LetterSideBarActivity"/>
 
 <!--        android:configChanges="keyboardHidden|orientation|screenSize|locale"-->
 <!--        android:theme="@android:style/Theme.Translucent"-->

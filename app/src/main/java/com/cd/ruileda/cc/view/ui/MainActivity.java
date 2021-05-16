@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
         mdata.add("评分控件RatingBar");
         mdata.add("常见多条目菜单筛选");
         mdata.add("字母索引列表");
+        mdata.add("贝塞尔曲线数学课");
+
 
         return mdata;
     }
@@ -88,6 +90,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case "字母索引列表":
                 getonitem(LetterSideBarActivity.class);
+                break;
+            case "贝塞尔曲线数学课":
+                getonitem(darrenErActivity.class);
                 break;
         }
 

@@ -16,7 +16,7 @@ import androidx.lifecycle.Observer;
 import com.cd.ruileda.cc.view.R;
 import com.cd.ruileda.cc.view.common.CommonPath;
 import com.cd.ruileda.cc.view.db.TStudent;
-import com.cd.ruileda.cc.view.db.TestDatabase;
+import com.cd.ruileda.cc.view.db.StudentDatabase;
 import com.cd.ruileda.cc.view.util.FileSizeUtil;
 import com.cd.ruileda.cc.view.util.SetRandom;
 import com.cd.ruileda.cc.view.util.ToastUtils;
@@ -74,7 +74,7 @@ public class RoomActivity extends AppCompatActivity implements View.OnClickListe
         new Thread(new Runnable() {
             @Override
             public void run() {
-                TestDatabase.getInstance(RoomActivity.this).getStudentDao().insertStudents(insertStudents);
+                StudentDatabase.getInstance(RoomActivity.this).getStudentDao().insertStudents(insertStudents);
 
             }
         }).start();
@@ -105,7 +105,7 @@ public class RoomActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void query(){
-        TestDatabase.getInstance(this).getStudentDao().getStudentsByGender(1)
+        StudentDatabase.getInstance(this).getStudentDao().getStudentsByGender(1)
                 .observe(this, new Observer<List<TStudent>>() {
                     @Override
                     public void onChanged(List<TStudent> students) {

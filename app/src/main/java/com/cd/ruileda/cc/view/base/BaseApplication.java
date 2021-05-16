@@ -35,8 +35,9 @@ public class BaseApplication extends Application {
         super.onCreate();
 
         mContext = getApplicationContext();
-        Bugly.init(getApplicationContext(), "36f30eca82", false);
+
         MMKV.initialize(this);
+        Bugly.init(getApplicationContext(), "36f30eca82", true);
 //        configTinker();
 
     }
@@ -68,7 +69,7 @@ public class BaseApplication extends Application {
         Beta.betaPatchListener = new BetaPatchListener() {
             @Override
             public void onPatchReceived(String s) {
-                Log.e(TAG, "补丁下载地址：" + s);
+                Log.e(TAG, "--------补丁下载地址：" + s);
             }
 
             @Override
@@ -80,25 +81,25 @@ public class BaseApplication extends Application {
 
             @Override
             public void onDownloadSuccess(String s) {
-                Log.e(TAG, "补丁下载成功");
+                Log.e(TAG, "------------补丁下载成功");
                 Toast.makeText(mContext, "补丁下载成功", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onDownloadFailure(String s) {
-                Log.e(TAG, "补丁下载失败");
+                Log.e(TAG, "--------补丁下载失败");
                 Toast.makeText(mContext, "补丁下载失败", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onApplySuccess(String s) {
-                Log.e(TAG, "补丁应用成功");
+                Log.e(TAG, "--------补丁应用成功");
                 Toast.makeText(mContext, "补丁应用成功", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onApplyFailure(String s) {
-                Log.e(TAG, "补丁应用失败");
+                Log.e(TAG, "--------补丁应用失败");
                 Toast.makeText(mContext, "补丁应用失败", Toast.LENGTH_SHORT).show();
             }
 
@@ -115,6 +116,10 @@ public class BaseApplication extends Application {
         // Bugly.setAppChannel(getApplication(), channel);
         // 这里实现SDK初始化，appId替换成你的在平台申请的appId
 //        Bugly.init(mContext, "24662872d6", true);
+
+        Bugly.init(getApplicationContext(), "36f30eca82", false);
+
+
     }
 
 

@@ -24,7 +24,7 @@
         android:usesCleartextTraffic="true"
 
         android:name=".base.BaseApplication"
-        android:theme="@style/Theme.Day01">
+        android:theme="@style/AppTheme">
 
         <activity android:name=".ui.login.LancherActivity">
             <intent-filter>
@@ -42,7 +42,8 @@
         <activity android:name=".ui.StatusColorActivity"/>
         <activity android:name=".ui.RatingBarActivity"/>
         <activity android:name=".ui.LetterSideBarActivity"/>
-      <activity android:name=".ui.darrenErActivity"/>
+        <activity android:name=".ui.darrenErActivity"/>
+        <activity android:name=".ui.DesignActivity"/>
 
 <!--        android:configChanges="keyboardHidden|orientation|screenSize|locale"-->
 <!--        android:theme="@android:style/Theme.Translucent"-->

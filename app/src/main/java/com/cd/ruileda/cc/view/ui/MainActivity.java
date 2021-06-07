@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
               setContentView(R.layout.mainlayout);
 
         recyclerView=findViewById(R.id.recycler_view);
@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         mdata.add("字母索引列表");
         mdata.add("贝塞尔曲线数学课");
 
+        mdata.add("沉浸式状态栏");
 
         return mdata;
     }
@@ -94,6 +95,10 @@ public class MainActivity extends AppCompatActivity {
             case "贝塞尔曲线数学课":
                 getonitem(darrenErActivity.class);
                 break;
+            case "沉浸式状态栏":
+                getonitem(DesignActivity.class);
+                break;
+
         }
 
     }

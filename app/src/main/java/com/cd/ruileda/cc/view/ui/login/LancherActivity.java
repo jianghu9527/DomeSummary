@@ -17,7 +17,7 @@ public class LancherActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
         setContentView(R.layout.layoutlancher);
           FileSizeUtil.FileCreatePath(CommonPath.TABLE_DIR);
 

@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
               setContentView(R.layout.mainlayout);
 
         recyclerView=findViewById(R.id.recycler_view);
-
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
         FruitAdapter adapter = new FruitAdapter(getData ());
@@ -54,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
         mdata.add("贝塞尔曲线数学课");
 
         mdata.add("沉浸式状态栏");
+        mdata.add("自定义Behavior");
+
 
         return mdata;
     }
@@ -97,6 +98,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case "沉浸式状态栏":
                 getonitem(DesignActivity.class);
+                break;
+            case "自定义Behavior":
+                getonitem(BehaviorActivity.class);
                 break;
 
         }

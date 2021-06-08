@@ -44,6 +44,7 @@
         <activity android:name=".ui.LetterSideBarActivity"/>
         <activity android:name=".ui.darrenErActivity"/>
         <activity android:name=".ui.DesignActivity"/>
+        <activity android:name=".ui.BehaviorActivity"/>
 
 <!--        android:configChanges="keyboardHidden|orientation|screenSize|locale"-->
 <!--        android:theme="@android:style/Theme.Translucent"-->

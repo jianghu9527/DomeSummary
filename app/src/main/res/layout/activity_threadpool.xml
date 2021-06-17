@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/cache_thread_executorbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="cache_thread_executorbtn" />
+
+    <Button
+        android:id="@+id/fixed_thread_executorbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="fixed_thread_executorbtn" />
+    <Button
+        android:id="@+id/scheduled_thread_executorbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="scheduled_thread_executorbtn" />
+    <Button
+        android:id="@+id/single_thread_executorbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="single_thread_executorbtn" />
+
+</LinearLayout>

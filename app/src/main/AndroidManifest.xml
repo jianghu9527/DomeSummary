@@ -35,7 +35,7 @@
         </activity>
 
         <activity android:name=".ui.QQActivity" />
-        <activity android:name=".ui.MainActivity" />
+        <activity android:name=".ui.main.MainActivity" />
         <activity android:name=".ui.UtilsViewPageActivity" />
         <activity android:name=".ui.ProgressActivity" />
         <activity android:name=".ui.TinkerActivity" />
@@ -45,6 +45,7 @@
         <activity android:name=".ui.darrenErActivity"/>
         <activity android:name=".ui.DesignActivity"/>
         <activity android:name=".ui.BehaviorActivity"/>
+        <activity android:name=".ui.ThreadpoolTest"/>
 
 <!--        android:configChanges="keyboardHidden|orientation|screenSize|locale"-->
 <!--        android:theme="@android:style/Theme.Translucent"-->

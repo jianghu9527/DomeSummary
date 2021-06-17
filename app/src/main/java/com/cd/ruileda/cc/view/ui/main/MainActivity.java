@@ -1,4 +1,4 @@
-package com.cd.ruileda.cc.view.ui;
+package com.cd.ruileda.cc.view.ui.main;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,20 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.cd.ruileda.cc.view.R;
 import com.cd.ruileda.cc.view.adapter.FruitAdapter;
+import com.cd.ruileda.cc.view.ui.BehaviorActivity;
+import com.cd.ruileda.cc.view.ui.DebugActivity;
+import com.cd.ruileda.cc.view.ui.DesignActivity;
+import com.cd.ruileda.cc.view.ui.LetterSideBarActivity;
+import com.cd.ruileda.cc.view.ui.ListDataActivity;
+import com.cd.ruileda.cc.view.ui.ProgressActivity;
+import com.cd.ruileda.cc.view.ui.QQActivity;
+import com.cd.ruileda.cc.view.ui.RatingBarActivity;
+import com.cd.ruileda.cc.view.ui.RoomActivity;
+import com.cd.ruileda.cc.view.ui.StatusColorActivity;
+import com.cd.ruileda.cc.view.ui.ThreadpoolTest;
+import com.cd.ruileda.cc.view.ui.TinkerActivity;
+import com.cd.ruileda.cc.view.ui.UtilsViewPageActivity;
+import com.cd.ruileda.cc.view.ui.darrenErActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -54,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
         mdata.add("沉浸式状态栏");
         mdata.add("自定义Behavior");
-
+        mdata.add("线程池");
 
         return mdata;
     }
@@ -102,6 +116,10 @@ public class MainActivity extends AppCompatActivity {
             case "自定义Behavior":
                 getonitem(BehaviorActivity.class);
                 break;
+            case "线程池":
+                getonitem(ThreadpoolTest.class);
+                break;
+
 
         }
 

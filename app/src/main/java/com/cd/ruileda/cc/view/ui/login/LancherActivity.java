@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.cd.ruileda.cc.view.R;
 import com.cd.ruileda.cc.view.common.CommonPath;
-import com.cd.ruileda.cc.view.ui.MainActivity;
+import com.cd.ruileda.cc.view.ui.main.MainActivity;
 import com.cd.ruileda.cc.view.util.FileSizeUtil;
 
 public class LancherActivity extends AppCompatActivity {

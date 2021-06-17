@@ -80,7 +80,7 @@ public class ThreadpoolTest  extends AppCompatActivity  implements View.OnClickL
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                    Log.d("--------ThreadpoolTest-------1------","Thread_ScheduledThread"+Thread.currentThread().getId()+"activeCount:"+Thread.activeCount()
+                    Log.d("--------ThreadpoolTest-------1------","Thread_ScheduledThread---"+Thread.currentThread().getId()+"---activeCount:"+Thread.activeCount()
                             +" index "+index);
                 }
             },2, TimeUnit.SECONDS);
@@ -98,7 +98,7 @@ public class ThreadpoolTest  extends AppCompatActivity  implements View.OnClickL
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                    Log.d("--------ThreadpoolTest-------2----","Thread"+Thread.currentThread().getId()+"activeCount:"+Thread.activeCount()
+                    Log.d("--------ThreadpoolTest-------2----","Thread---"+Thread.currentThread().getId()+"--activeCount:"+Thread.activeCount()
                             +" index "+index);
                 }
             });

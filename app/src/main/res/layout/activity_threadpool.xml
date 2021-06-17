@@ -10,25 +10,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="cache_thread_executorbtn" />
+        android:text="cache_thread_executorbtn可缓存线程池" />
 
     <Button
         android:id="@+id/fixed_thread_executorbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="fixed_thread_executorbtn" />
+        android:text="fixed_thread_executorbtn固定数量的线程池" />
     <Button
         android:id="@+id/scheduled_thread_executorbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="scheduled_thread_executorbtn" />
+        android:text="scheduled_thread_executorbtn大小无限制的线程池" />
     <Button
         android:id="@+id/single_thread_executorbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="single_thread_executorbtn" />
+        android:text="single_thread_executorbtn单个线程的线程池" />
 
 </LinearLayout>
